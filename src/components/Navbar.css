@@ -98,7 +98,7 @@
 
 .navbar-link {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 1 rem;
   font-weight: 500;
   color: var(--color-hueso);
   text-decoration: none;
@@ -224,7 +224,7 @@
   .navbar-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%;
     width: 320px;
     height: 100vh;
     background: var(--color-nogal);
@@ -232,13 +232,13 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
     padding: 2rem;
   }
 
   .navbar-menu.active {
-    right: 0;
+    left: 0;
   }
 
   .navbar-link {
@@ -289,7 +289,7 @@
 
   .navbar-menu {
     width: 100%;
-    right: -100%;
+    right: 100%;
   }
 
   .logo-text {

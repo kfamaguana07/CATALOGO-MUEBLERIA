@@ -84,7 +84,7 @@ const Navbar = () => {
         </ul>
 
         <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src="https://res.cloudinary.com/dufbr79os/image/upload/v1772601561/Logo_-_Muebleria_isufgc.png" alt="Elegance Mueblería Logo" className="navbar-logo-image" />
+          <img src="https://res.cloudinary.com/dufbr79os/image/upload/v1772645380/Logo_Muebleria_um9k4m.png" alt="Elegance Mueblería Logo" className="navbar-logo-image" />
         </NavLink>
         
       </div>
