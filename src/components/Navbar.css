@@ -1,0 +1,302 @@
+/* ========================================
+   NAVBAR PREMIUM - PALETA URBAN NATURE
+======================================== */
+:root {
+  --color-nogal: #3D2B1F;
+  --color-arena: #D7C4B1;
+  --color-hueso: #F9F7F5;
+  --color-bronce: #B38B59;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* ========================================
+   NAVBAR BASE
+======================================== */
+.navbar-premium {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(61, 43, 31, 0.95);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-premium.navbar-scrolled {
+  background: rgba(61, 43, 31, 0.98);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 1rem 0;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========================================
+   LOGO
+======================================== */
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  width: 80px;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-2px);
+}
+
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-hueso);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.navbar-premium.navbar-scrolled .logo-text {
+  color: var(--color-hueso);
+}
+
+.logo-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-bronce);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* ========================================
+   MENÚ PRINCIPAL
+======================================== */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-link {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-hueso);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  letter-spacing: 0.02em;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-bronce);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+  width: 100%;
+}
+
+.navbar-link:hover {
+  color: var(--color-bronce);
+}
+
+.navbar-link.active {
+  color: var(--color-bronce);
+}
+
+/* ========================================
+   BOTÓN CTA (CONTACTO)
+======================================== */
+.navbar-cta {
+  padding: 0.7rem 1.8rem !important;
+  border: 2px solid var(--color-bronce);
+  border-radius: 25px;
+  background: transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.navbar-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--color-bronce);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.navbar-cta:hover::before {
+  width: 100%;
+}
+
+.navbar-cta:hover {
+  color: var(--color-hueso) !important;
+  transform: translateY(-2px);
+}
+
+.navbar-cta::after {
+  display: none;
+}
+
+/* ========================================
+   BOTÓN HAMBURGUESA (MÓVIL)
+======================================== */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  height: 20px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--color-hueso);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ========================================
+   RESPONSIVE - TABLET Y MÓVIL
+======================================== */
+@media (max-width: 991px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: var(--color-nogal);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+    color: var(--color-hueso) !important;
+  }
+
+  .navbar-link::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-cta {
+    margin-top: 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1.5rem;
+  }
+
+  .navbar-menu {
+    width: 280px;
+  }
+
+  .logo-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-premium {
+    padding: 1rem 0;
+  }
+
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    right: -100%;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.55rem;
+  }
+}
