@@ -194,6 +194,13 @@
   margin: 0;
 }
 
+.footer-logo {
+  width: 120px;
+  position: relative;
+  left: 20%;
+  margin-bottom: 1rem;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 991px) {
   .footer-about {
@@ -250,6 +257,11 @@
 
   .footer-subtitle {
     font-size: 1.2rem;
+  }
+
+  .footer-logo {
+    width: 125px;
+    left: 35%;
   }
 
   .social-icon {

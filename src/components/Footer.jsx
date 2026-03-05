@@ -11,9 +11,11 @@ const Footer = () => {
           {/* Columna 1: Información de la Mueblería */}
           <div className="col-lg-4 col-md-6 col-12">
             <div className="footer-section footer-about">
-              <h3 className="footer-title">
-                Mueblería <span className="footer-accent">Elegance</span>
-              </h3>
+              <img 
+                src="https://res.cloudinary.com/dufbr79os/image/upload/v1772645380/Logo_Muebleria_um9k4m.png" 
+                alt="Mueblería Elegance" 
+                className="footer-logo"
+              />
               <p className="footer-slogan">
                 Transformamos espacios en experiencias únicas. Calidad, diseño y confort en cada pieza.
               </p>
@@ -110,7 +112,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; {currentYear} Mueblería Elegance. Todos los derechos reservados.
+            &copy; {currentYear} Azotech. Todos los derechos reservados.
           </p>
         </div>
       </div>

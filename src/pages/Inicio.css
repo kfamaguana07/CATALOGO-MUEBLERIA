@@ -160,8 +160,9 @@
    SECCIÓN SOBRE LA MUEBLERÍA
 ======================================== */
 .about-section {
-  padding: 120px 0;
   background-color: var(--color-hueso);
+  top: 90px;
+  position: relative;
 }
 
 .section-title {
@@ -169,7 +170,7 @@
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   font-weight: 600;
   color: var(--color-nogal);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
 }
 
@@ -267,6 +268,7 @@
    SECCIÓN CATEGORÍAS DESTACADAS
 ======================================== */
 .categories-section {
+  position: relative;
   padding: 120px 0;
   background: linear-gradient(to bottom, var(--color-hueso) 0%, #f0ebe7 100%);
 }
@@ -452,6 +454,7 @@
   .about-section,
   .categories-section {
     padding: 60px 0;
+    top: 5%;
   }
   
   .image-collage {
@@ -462,7 +465,6 @@
   }
   
   .collage-item {
-    height: 250px;
     transform: none !important;
   }
   

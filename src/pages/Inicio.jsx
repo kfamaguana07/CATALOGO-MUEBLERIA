@@ -27,30 +27,25 @@ const Inicio = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 fade-up">
               <div className="about-content">
-                <h2 className="section-title">Nuestra Pasión</h2>
-                <h3 className="section-subtitle">El Arte de la Madera</h3>
+                <h2 className="section-title">Sobre Nosotros</h2>
                 <p className="about-text">
-                  Cada pieza que creamos nace de una profunda conexión con la naturaleza 
-                  y el respeto por la tradición artesanal. Trabajamos con maderas nobles, 
-                  MDF de alta calidad y melamínicos premium para dar vida a espacios únicos.
-                </p>
+                  Con más de 20 años de experiencia en Mueblería y Carpintería 'El Laurel' nos dedicamos a diseñar y fabricar muebles en todos los estilos: puertas, closets, muebles de cocina y mucho más. Cada trabajo que realizamos está respaldado por nuestra garantía asegurando tu satisfacción en todo momento.
+                  </p>
                 <p className="about-text">
-                  Nuestro compromiso es transformar tu visión en realidad, combinando 
-                  técnicas ancestrales con diseño contemporáneo. Cada mueble cuenta una 
-                  historia de dedicación, precisión y amor por los detalles.
-                </p>
+                  Trabajamos con materiales de alta calidad como madera, MDF y melamínico, nos adaptamos a tu presupuesto sin limitar tu creatividad. Cualquier diseño que imagines puede hacerse realidad, creando espacios únicos que reflejen tu estilo y necesidades.
+                  </p>
                 <div className="about-features">
                   <div className="feature-item">
                     <span className="feature-icon">✦</span>
-                    <span>Diseño Personalizado</span>
+                    <span>Más de 25 años creando muebles de calidad</span>
                   </div>
                   <div className="feature-item">
                     <span className="feature-icon">✦</span>
-                    <span>Materiales Premium</span>
+                    <span>Garantía en cada trabajo que realizamos</span>
                   </div>
                   <div className="feature-item">
                     <span className="feature-icon">✦</span>
-                    <span>Artesanía Experta</span>
+                    <span>Diseños personalizados, hechos a tu medida y presupuesto</span>
                   </div>
                 </div>
               </div>
@@ -59,19 +54,19 @@ const Inicio = () => {
               <div className="image-collage">
                 <div className="collage-item collage-large">
                   <img 
-                    src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=600&h=700&fit=crop" 
+                    src="https://res.cloudinary.com/dufbr79os/image/upload/v1772734442/Gemini_Generated_Image_fhz513fhz513fhz5_rzpu7f.png" 
                     alt="Mueble artesanal" 
                   />
                 </div>
                 <div className="collage-item collage-medium">
                   <img 
-                    src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=400&h=500&fit=crop" 
+                    src="https://res.cloudinary.com/dufbr79os/image/upload/v1772743232/Gemini_Generated_Image_k2omxpk2omxpk2om_r3shea.png" 
                     alt="Detalle madera" 
                   />
                 </div>
                 <div className="collage-item collage-small">
                   <img 
-                    src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=350&h=450&fit=crop" 
+                    src="https://res.cloudinary.com/dufbr79os/image/upload/v1772733922/Gemini_Generated_Image_rwaja1rwaja1rwaj_jeskgl.png" 
                     alt="Acabado fino" 
                   />
                 </div>
@@ -87,7 +82,7 @@ const Inicio = () => {
           <div className="text-center mb-5 fade-up">
             <h2 className="section-title">Nuestras Especialidades</h2>
             <p className="section-description">
-              Explora nuestras categorías de productos y descubre la excelencia en cada detalle
+              Explora nuestras categorías de productos y encuentra el diseño perfecto para cada rincón de tu casa.
             </p>
           </div>
           
@@ -97,7 +92,7 @@ const Inicio = () => {
               <div className="category-card">
                 <div className="category-image-wrapper">
                   <img 
-                    src="https://images.unsplash.com/photo-1534172849764-7f5ab3c96a28?w=800&h=600&fit=crop" 
+                    src="https://res.cloudinary.com/dufbr79os/image/upload/v1772747201/Gemini_Generated_Image_ywnev5ywnev5ywne_hfdzv4.png" 
                     alt="Puertas de madera" 
                     className="category-image"
                   />
@@ -106,7 +101,7 @@ const Inicio = () => {
                 <div className="category-content">
                   <h3 className="category-title">Puertas</h3>
                   <p className="category-description">
-                    Puertas de entrada y de interior que combinan seguridad y elegancia
+                    Puertas principales e interiores con diseños clásicos y modernos.
                   </p>
                   <span className="category-link">Ver más →</span>
                 </div>
@@ -118,7 +113,7 @@ const Inicio = () => {
               <div className="category-card">
                 <div className="category-image-wrapper">
                   <img 
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop" 
+                    src="https://res.cloudinary.com/dufbr79os/image/upload/v1772749360/Gemini_Generated_Image_gct7yagct7yagct7_qwknab.png" 
                     alt="Closets modernos" 
                     className="category-image"
                   />
@@ -127,7 +122,7 @@ const Inicio = () => {
                 <div className="category-content">
                   <h3 className="category-title">Closets</h3>
                   <p className="category-description">
-                    Soluciones de almacenamiento personalizadas para optimizar tu espacio
+                    Closets modulares y sobre medida para mantener todo en orden.
                   </p>
                   <span className="category-link">Ver más →</span>
                 </div>
@@ -139,16 +134,16 @@ const Inicio = () => {
               <div className="category-card">
                 <div className="category-image-wrapper">
                   <img 
-                    src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&h=600&fit=crop" 
+                    src="https://res.cloudinary.com/dufbr79os/image/upload/v1772749412/D_Q_NP_899179-MLU78141444176_082024-O_xerm0k.webp" 
                     alt="Muebles de cocina" 
                     className="category-image"
                   />
                   <div className="category-overlay"></div>
                 </div>
                 <div className="category-content">
-                  <h3 className="category-title">Muebles de Cocina</h3>
+                  <h3 className="category-title">Muebles</h3>
                   <p className="category-description">
-                    Cocinas integrales diseñadas para funcionalidad y estilo
+                    Muebles para cocina y baño fabricados con materiales que soportan la humedad y el uso diario.
                   </p>
                   <span className="category-link">Ver más →</span>
                 </div>
