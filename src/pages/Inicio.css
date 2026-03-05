@@ -161,8 +161,8 @@
 ======================================== */
 .about-section {
   background-color: var(--color-hueso);
-  top: 90px;
   position: relative;
+  margin-top: 6%;
 }
 
 .section-title {
@@ -454,7 +454,6 @@
   .about-section,
   .categories-section {
     padding: 60px 0;
-    top: 5%;
   }
   
   .image-collage {
@@ -480,4 +479,5 @@
   .category-content {
     padding: 25px;
   }
+
 }
