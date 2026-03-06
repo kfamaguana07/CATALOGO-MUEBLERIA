@@ -30,10 +30,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar-premium ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-container">
-        
 
-        <button 
-          className="navbar-toggle" 
+
+        <button
+          className="navbar-toggle"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
@@ -46,8 +46,8 @@ const Navbar = () => {
 
         <ul className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <li className="navbar-item">
-            <NavLink 
-              to="/" 
+            <NavLink
+              to="/"
               className={({ isActive }) => isActive ? 'navbar-link active' : 'navbar-link'}
               onClick={closeMobileMenu}
             >
@@ -55,8 +55,8 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="navbar-item">
-            <NavLink 
-              to="/disenos" 
+            <NavLink
+              to="/diseños"
               className={({ isActive }) => isActive ? 'navbar-link active' : 'navbar-link'}
               onClick={closeMobileMenu}
             >
@@ -64,8 +64,8 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="navbar-item">
-            <NavLink 
-              to="/trabajos-realizados" 
+            <NavLink
+              to="/trabajos-realizados"
               className={({ isActive }) => isActive ? 'navbar-link active' : 'navbar-link'}
               onClick={closeMobileMenu}
             >
@@ -73,8 +73,8 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="navbar-item">
-            <NavLink 
-              to="/contactos" 
+            <NavLink
+              to="/contactos"
               className={({ isActive }) => isActive ? 'navbar-link active' : 'navbar-link'}
               onClick={closeMobileMenu}
             >
@@ -86,7 +86,7 @@ const Navbar = () => {
         <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src="https://res.cloudinary.com/dufbr79os/image/upload/v1772645380/Logo_Muebleria_um9k4m.png" alt="Elegance Mueblería Logo" className="navbar-logo-image" />
         </NavLink>
-        
+
       </div>
     </nav>
   );
